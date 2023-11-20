@@ -11,7 +11,7 @@ width: 100%;
 }
 
 nav img{
-    width: 5%;
+    width: 5vw;
 }
 
 nav ul {
@@ -36,12 +36,12 @@ h1{
     padding-top: 20%;
     font-size: 3rem;
 }
-main {
+header {
 
     background-image: url('Avengers.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 100vh;
 }
 
 p{
