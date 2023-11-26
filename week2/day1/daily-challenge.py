@@ -8,21 +8,21 @@
 # count=10
 
 # Answer :
-# if len(sentence)<count:
-#     print("String is too short.")
+if len(sentence)<count:
+    print("String is too short.")
 
-# elif len(sentence)>count:
-#     print("String is too long.")
-# else:
-#     print("Perfect string.")
+elif len(sentence)>count:
+    print("String is too long.")
+else:
+    print("Perfect string.")
 
 # # 2# 
 # Then, print the first and last characters of the given text.
 
-# print("The first character is :", sentence[0])
-# print("The last character is :", sentence[-1])
+print("The first character is :", sentence[0])
+print("The last character is :", sentence[-1])
 
-# 3# for loop, 
+# 3# Using a for loop, construct the string character by character: Print the first character, then the second, then the third, until the full string is printed. For example:
 
 
 # The user enters "HelloWorld"
@@ -33,17 +33,16 @@
 # ... etc
 # HelloWorld
 
-# string=input("Enter HelloWorld: ")
-# x=""
+string=input("Enter HelloWorld: ")
+x=""
 
-# for character in string:
-#     x+=character
-#     print(x)
+for character in string:
+    x+=character
+    print(x)
     
     
 4#
 import random
-list= [H, l, r, o, l, e, l, w, o, d]"Hlrolelwod"
-new_string=""
+list= ["H", "l", "r", "o", "l", "e", "l", "w", "o", "d"]
 random.shuffle(list)
-print(new_string)
+print(list)
