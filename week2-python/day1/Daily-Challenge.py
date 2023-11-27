@@ -4,15 +4,16 @@
 # If it’s less than 10 characters, print a message which states “string not long enough”.
 # If it’s more than 10 characters, print a message which states “string too long”.
 # If it’s 10 characters, print a message which states “perfect string” and continue the exercise.
-# sentence= input("Enter a sentence : ")
-# count=10
 
-# Answer :
+sentence= input("Enter a sentence : ")
+count=10
+
 if len(sentence)<count:
     print("String is too short.")
 
 elif len(sentence)>count:
     print("String is too long.")
+
 else:
     print("Perfect string.")
 
