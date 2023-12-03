@@ -130,3 +130,59 @@ else ():
     print ('You chose a new fruit. I hope you enjoy')
 
 
+8. 
+
+9.
+# A movie theater charges different ticket prices depending on a person’s age.
+# if a person is under the age of 3, the ticket is free.
+# if they are between 3 and 12, the ticket is $10.
+# if they are over the age of 12, the ticket is $15.
+
+# Ask a family the age of each person who wants a ticket.
+
+# Store the total cost of all the family’s tickets and print it out.
+
+total_cost=0
+number_ticket=0
+
+
+while True:
+        age=int(input('Enter the ages of each person or quit: '))
+        if age==0:
+                break
+        else:
+                if age < 3 :
+                        number_ticket+=1
+                        total_cost+=0  
+                elif 3<age< 12:
+                        number_ticket+=1
+                        total_cost+=10
+                else:
+                        number_ticket+=1
+                        total_cost+=15
+                
+print(f'You are {number_ticket} people and the total cost is {total_cost}.')
+
+
+# A group of teenagers are coming to your movie theater and want to watch a movie that is restricted for people between the ages of 16 and 21.
+# Given a list of names, write a program that asks teenager for their age, if they are not permitted to watch the movie, remove them from the list.
+# At the end, print the final list.
+
+names=['Liron','Sharon','Samuel','Liora','Sarah']
+allowed=[]
+
+for name in names:
+        
+        age=int(input('Enter your age: '))
+        if 16<age<21:
+                
+                        print('You are allowed to see the movie')
+                        allowed.append(name)
+                        continue
+
+        else:
+                        print('You cannot see the movie')
+                        names.remove(name)
+                        continue                       
+
+print(', '.join(allowed), 'are allowed to see the movie')
