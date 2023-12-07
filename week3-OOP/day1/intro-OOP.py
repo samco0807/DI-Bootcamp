@@ -17,14 +17,14 @@ class player:
         self.attack=attack
         print('Welcome player', pseudo, '/ Life', health, '/ Attack', attack)
 
-        def get_pseudo(self):
-            return self.pseudo
-        
-        def get_health(self):
-            return self.health
-        
-        def get_attack_value(self):
-            return self.attack
+    def get_pseudo(self):
+        return self.pseudo
+    
+    def get_health(self):
+        return self.health
+    
+    def get_attack_value(self):
+        return self.attack
 
     def damage(self, damage):
         self.health-=damage
