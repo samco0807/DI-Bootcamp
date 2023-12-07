@@ -1,22 +1,3 @@
-# def num(1 100)
-#     if  0 <number < 100 random.number:
-#         print('You have the same number')
-#     else:
-#         print('you do not have the wrong number')
-
-# name='apple'
-# letter='l'
-# index_letter=name.index(letter)
-# print(index_letter)
-
-# ex:
-# name='xylophone'
-# letter='y'
-# if letter in name:
-#     print(f'{letter} is in {name}')
-# else:
-#     print(f'({letter} is not in {name}')
-
 # ex: not finished:
 # my_string=input('Enter a sentence: ')
 # if my_string is lowercase():
@@ -27,8 +8,6 @@
 # list=[1,2,3,4]
 # list=[i*20 for i in list]
 # print(list)
-
-
 
 # toppings=[input('Select your toppings: ')]
 # price=10
@@ -63,46 +42,8 @@
 # number_ticket=0
 
 
-# while True:
-#         age=int(input('Enter the ages of each person or quit: '))
-#         if age==0:
-#                 break
-#         else:
-#                 if age < 3 :
-#                         number_ticket+=1
-#                         total_cost+=0
-                        
-#                 elif 3<age< 12:
-#                         number_ticket+=1
-#                         total_cost+=10
-#                 else:
-#                         number_ticket+=1
-#                         total_cost+=15
-                
-
-# print(f'You are {number_ticket} people and the total cost is {total_cost}.')
 
 
-
-
-# names=['Liron','Sharon','Samuel','Liora','Sarah']
-# allowed=[]
-
-# for name in names:
-        
-#         age=int(input('Enter your age: '))
-#         if 16<age<21:
-                
-#                         print('You are allowed to see the movie')
-#                         allowed.append(name)
-#                         continue
-
-#         else:
-#                         print('You cannot see the movie')
-#                         names.remove(name)
-#                         continue                       
-
-# print(', '.join(allowed), 'are allowed to see the movie')
 
 # keys = ['Ten', 'Twenty', 'Thirty']
 # values = [10, 20, 30]
@@ -111,133 +52,8 @@
 # result=zip(keys, values)
 # dict.update(result)
 # print(dict)
-
-
-# family = {"rick": 43, 'beth': 13, 'morty': 5, 'summer': 8, 'Nath': 2, 'Samuel' : 15}
-# ticket=0
-# for item in family.items():
-
-#         if item<3:
-                
-#                 ticket=0
-#                 value=family.values
-#                 value<3
-#                 print('it will cost 0$ for', value,'\n')
-
-#         elif 3<item<12: 
-#                 value=family.values
-#                 3<value<12
-#                 ticket+=10
-#                 print('it will cost 10$ for', value,'.\n')
-
-#         else: 
-#                 ticket+=15
-#                 print('it will cost 15$ for', family.,'.\n')
-
-        
-# print(f'it will cost {ticket} for {family.keys}. {ticket}''$''\n')
-
-
-# family = {"rick": 43, 'beth': 13, 'morty': 5, 'summer': 8, 'Nath': 2, 'Samuel' : 15}
-# ticket=0
-
-# for key, value in family.items():
-#         if value<3:
-#                         ticket+=0
-#                         print(f'It will be free for {key}.')
-#         elif 3<value<12:
-#                         ticket+=10
-#                         print(f'It will cost 10$ for {key}.')
-#         else:
-#                         ticket+=15
-#                         print(f'It will cost 15$ for {key}.')
-
-# print(f'The family final cost will be {ticket}.')
-
-
-
-# family = {}
-# ticket=0
-
-# name=(input('Enter your name: '))
-# age=int(input('Enter your age: '))
-# family.update({name: age})
-
-# for name, age in family.items():
        
-
-#         if age<3:
-#                         ticket+=0
-#                         print(f'It will be free for {name}.')
-#         elif 3<age<12:
-#                         ticket+=10
-#                         print(f'It will cost 10$ for {name}.')
-#         else:
-#                         ticket+=15
-#                         print(f'It will cost 15$ for {name}.')
-
-# print(f'The family final cost will be {ticket}.')
-
-# name= "Zara"
-# creation_date= 1975 
-# creator_name= "Amancio Ortega Gaona"
-# type_of_clothes= ["men", "women","children","home"]
-# international_competitors= ["Gap", "H&M", "Benetton"]
-# number_stores: 7000 
-# major_color: {"France" : "blue", "Spain" : "red","US" : ["pink","green"]}
-
-# brand={}
-# brand['brand_name'] = 'Zara'
-# brand['creation_date'] = 1975
-# brand['creator_name'] = 'Amancio Ortega Gaona'
-# brand['number_stores'] = 7000
-# brand['major_color']={"France" : "blue", "Spain" : "red","US" : ["pink","green"]}
-# print(brand)
-
-# brand['number_stores'] = 2
-# print(brand)
-
-# print(f'{brand["brand_name"]} clients are men, women and children')
-
-# brand['country_creation']='Spain'
-# print(brand)
-
-# brand["international_competitors"]=["Gap", "H&M", "Benetton"]
-# print(brand)
-
-
-# if "international_competitors" in brand:
-#     brand["international_competitors" ].append('Desigual')
-#     print(brand)
-
-# else: print('The  key does not exist')
-
-
-# del brand['creation_date']
-# print(brand)
-
-# print(brand["international_competitors"][-1])
-
-
-# # for value in brand:
-# #     print(f'{US}' is {value})
-
-# for key, value in brand.items():
-#     print(key)
-
-# for key, value in brand.items():
-#     print(value)
-
-# more_on_zara={
-# 'creation_date': 1975, 
-# 'number_stores': 10000
-# }
-
-# brand.update(more_on_zara)
-# print(brand)
-
-# for key, value in brand.items():
-#     print(number_stores)
+# print(f'it will cost {ticket} for {family.keys}. {ticket}''$''\n')
     
 # Ex 1:
 
@@ -283,38 +99,87 @@
 
 # sara_pets=Cat("Bengal", age, 'Chartreux','Siamese',all_cats)
 
-class dog:
-    def __init__(self, name, age, weight) -> None:
-        self.name=name
-        self.age=age
-        self.weight=weight
+# class dog:
+#     def __init__(self, name, age, weight) -> None:
+#         self.name=name
+#         self.age=age
+#         self.weight=weight
 
-    def get_name(self):
-        return self.name
+#     def get_name(self):
+#         return self.name
     
-    def get_age(self):
-        return self.age
+#     def get_age(self):
+#         return self.age
     
-    def get_weight(self):
-        return self.weight
+#     def get_weight(self):
+#         return self.weight
     
 
-def bark(self,bark):
-    self.bark=bark
-    return self.bark
-print(f'{self.name} is barking')
+# def bark(self,bark):
+#     self.bark=bark
+#     return self.bark
+# print(f'{self.name} is barking')
 
-def run_speed(self,run_speed):
-    self.run_speed=run_speed
-    return self.run_speed
-print(f'{(self.weight/self.age)*10}')
+# def run_speed(self,run_speed):
+#     self.run_speed=run_speed
+#     return self.run_speed
+# print(f'{(self.weight/self.age)*10}')
 
-def fight(self,other_dog):
-    self.other_dog=other_dog
-    return self.fight
-print(f'{self.name} is barking')
+# def fight(self,other_dog):
+#     self.other_dog=other_dog
+#     return self.fight
+# print(f'{self.name} is barking')
 
 
-dog1=dog('Woopi', 10, 3)
-dog2=dog('Ella', 7, 5)
-dog3=dog('Wody', 6, 2)
+# dog1=dog('Woopi', 10, 3)
+# dog2=dog('Ella', 7, 5)
+# dog3=dog('Wody', 6, 2)
+
+# file=open("students.txt","a+")
+# file.write("Samuel\n")
+# file.write("Carole\n")
+# file.write("Julie\n")
+# file.close()
+
+# students_list=["Samuel","Segev","Juliana","Michal","Kelly","David"]
+
+# with open("students.txt", "a+") as  file:
+#     for student in students_list:
+#         file.write(student +"\n")
+#     file.close()
+
+# import os
+# import random
+
+# if os.path.exists("meals.txt"):
+#     with open("Meals.txt", "r+") as file:
+#         meals_list=file.readlines()
+#         meal_random_choice=random.choice(meals_list)
+#         print("I propose you today the meal", meal_random_choice)
+#         file.close()
+# else:
+#     print("Warning! The document doesn't exist!")
+
+class Person():
+    '''A person class'''
+    name='John'
+    age=40
+    languages=[]
+
+person1 = Person()
+person2 = Person()
+
+person1.languages.append('english')
+
+print(Person.languages)
+print(person2.languages)
+
+person1.languages=['English']
+person1.languages.append('Japanese')
+
+print(Person.languages)
+print(person2.languages)
+print(person1.languages)
+
+    
+
