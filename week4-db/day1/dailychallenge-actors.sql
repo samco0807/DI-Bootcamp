@@ -16,7 +16,7 @@ VALUES (
         'Female'
     )
 
--- IF NOT NULL in a field --> an error should be displayed.
+-- IF NOT NULL in a field constraint --> an error should be displayed.
 
 -- Count how many actors are in the table.
 
