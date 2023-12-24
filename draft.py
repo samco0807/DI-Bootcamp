@@ -160,26 +160,27 @@
 # else:
 #     print("Warning! The document doesn't exist!")
 
-class Person():
-    '''A person class'''
-    name='John'
-    age=40
-    languages=[]
+# class Person():
+#     '''A person class'''
+#     name='John'
+#     age=40
+#     languages=[]
 
-person1 = Person()
-person2 = Person()
+# person1 = Person()
+# person2 = Person()
 
-person1.languages.append('english')
+# person1.languages.append('english')
 
-print(Person.languages)
-print(person2.languages)
+# print(Person.languages)
+# print(person2.languages)
 
-person1.languages=['English']
-person1.languages.append('Japanese')
+# person1.languages=['English']
+# person1.languages.append('Japanese')
 
-print(Person.languages)
-print(person2.languages)
-print(person1.languages)
+# print(Person.languages)
+# print(person2.languages)
+# print(person1.languages)
 
-    
+
+
 
