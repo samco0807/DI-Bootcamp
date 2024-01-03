@@ -57,3 +57,75 @@ colors = ["blue", "red", "green", "purple"]
 for ((let x in colors) && (i=0; i<colors.length();i++)) {
 console.log(`"My" ${[i]} "choice is" ${colors.indexOf[x]}` );
   }
+
+// Ex 3:
+let i = prompt('Enter a number: ')
+// console.log(typeof(number));
+
+do {
+console.log(i);
+}
+while (i < 10) {
+    let i = prompt('Enter another number: ')
+    console.log(i);
+}
+
+
+// Ex 4: 
+
+const building = {
+  numberOfFloors: 4,
+  numberOfAptByFloor: {
+      firstFloor: 3,
+      secondFloor: 4,
+      thirdFloor: 9,
+      fourthFloor: 2,
+  },
+  nameOfTenants: ["Sarah", "Dan", "David"],
+  numberOfRoomsAndRent:  {
+      sarah: [3, 990],
+      dan:  [4, 1000],
+      david: [1, 500],
+  },
+}
+
+// Console.log the number of floors in the building.
+console.log(building.numberOfFloors);
+
+// Console.log how many apartments are on the floors 1 and 3.
+console.log(building.numberOfAptByFloor.firstFloor,building.numberOfAptByFloor.thirdFloor);
+
+// Console.log the name of the second tenant and the number of rooms he has in his apartment.
+const secondTenantName = building.nameOfTenants[1];
+const danRentRooms = building.numberOfRoomsAndRent.dan[0];
+
+console.log(secondTenantName);
+console.log(danRentRooms);
+
+// Check if the sum of Sarah’s and David’s rent is bigger than Dan’s rent. If it is, than increase Dan’s rent to 1200.
+
+const danRent = building.numberOfRoomsAndRent.dan[1];
+const sarahRent = building.numberOfRoomsAndRent.sarah[1]
+const davidRent = building.numberOfRoomsAndRent.david[1]
+
+if ((sarahRent+davidRent)>danRent) {
+  building.numberOfRoomsAndRent.dan[1]=1200;
+  console.log(`Dan's rent has been increased to ${building.numberOfRoomsAndRent.dan[1]})`);
+} else {
+
+
+}
+
+
+// Ex 6 : 
+// Given the object above and using a for loop, console.log “my name is Rudolf the raindeer”
+
+const details = {
+  my: 'name',
+  is: 'Rudolf',
+  the: 'raindeer'
+}
+
+for (keys in details){
+  console.log(`My ${details.my} is ${details.is} the ${details.the}`);
+}
