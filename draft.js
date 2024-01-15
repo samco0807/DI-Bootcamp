@@ -28,88 +28,6 @@
 // // console.log(notes.length);
 //   console.log(person.notes.length);
 
-// const age = 17
-// const pays = 'FR'
-// const peutConduireFrance = pays == 'FR'
-// const peutConduireUS = pays === 'US' &&
-
-// if (
-//     (pays === 'FR' && age >= 18) ||
-//     (pays === 'US' && age >= 16)
-// ) {
-//     console.log("Vous avez le droit de conduire")
-// } else if () {
-
-// } else {
-//     console.log("Vous n'avez pas le droit de conduire");
-// }
-// ;
-
-// switch (pays) {
-// case 'FR':
-//     console.log("Je suis en France");
-//     break;
-// case 'US':
-//     console.log("Je suis aux US");
-//     break;
-// case 'ISR':
-//     console.log("Je suis en Israel");
-//     break;
-// default:
-//     console.log("Je suis dans un pays inconnu");
-//     break;
-// }
-
-// const year = 2023
-// const birthYear = prompt('quel est votre année de naissance ?')
-// const age = year - birthYear
-
-// if (age<=13){
-// console.log('Lilo & Stitch');
-// } else if (age>13 && age<18) {
-// console.log('Matrix');
-// } else {
-// console.log('Evil Dead');
-// }
-
-// const a = prompt('Enter a number: ')
-// const b = prompt('Enter another number: ')
-// const c = a * b
-
-// if(isNaN(c)){
-//     console.log(`impossible operation: ${a} x ${b}`);
-// } else {
-//     if (c > 0) {
-//         console.log(`${c} is positive`);
-//     } else {
-//         console.log(`${c} is negative`);
-//     }
-// }
-
-// let i = 0;
-// while (i<10){
-//     console.log('Bonjour'+i);
-//     i++
-// }
-
-// const notes=[12,13,14,15]
-// for (let i in notes){
-//     console.log(notes[i]);
-// }
-// function canDrive (age, pays) {
-// if (
-//         (pays === 'FR' && age >= 18) ||
-//         (pays === 'US' && age >= 16)
-//     ){
-//         return true
-//     }
-//     {
-//     return false
-//     }
-// }
-
-// let i = 0;
-
 // function greeting(name) {
 //     i++
 //   console.log(`Bonjour ${name}`);
@@ -129,155 +47,6 @@
 
 // upNotes(notes)
 // console.log(notes);
-
-// const a = {
-//   firstname: "John",
-//   lastname: "Doe",
-//   fullname: function () {
-//     console.log(`${this.firstname} ${this.lastname}`);
-//   },
-// };
-
-// const maFonction = () => {
-//   console.log(this);
-// };
-
-// a.fullname();
-// console.log("Hello".toUpperCase());
-
-// maFonction.call(3, 1, 2);
-
-// const isPair = function (a, fn) {
-//   if (a % 2 === 0) {
-//     fn();
-//   } else {
-//     console.log("Mon nombre est impair");
-//   }
-// };
-
-// isPair(7, function () {
-//   console.log("Mon nombre est pair");
-// });
-
-// générer un nombre aléatoire entre 0 et 10
-// 3 essais de pour deviner le mot
-// isRight(n)
-// guess() choisir un mot true si le bon mot et false si non
-
-// function getReturnInt(max) {
-//   return Math.floor(Math.random() * (max + 1));
-// }
-
-// function isRight(n) {
-//   return solution === n;
-// }
-
-// function guess() {
-//   const number = prompt("Entrez un chiffre" * 1);
-//   return isRight(number);
-// }
-
-// for (i = 0; i <= 3; i++) {
-//   if (guess()) {
-//     console.log("Bravo");
-//     break;
-//   } else if (i === 2) {
-//     console.log("Vous avez perdu");
-//   }
-// }
-
-// const myString = {
-//   kayak: true,
-//   sos: true,
-//   Kayak: true,
-// };
-
-// const sentence = "The movie is not that bad, I like it";
-// const wordNot = sentence.length("not");
-// const wordBad = sentence.length("bad");
-
-// if (wordBad>wordNot){
-//     sentence.replace('not', 'bad', 'good')
-// }
-
-// let people = ["Greg", "Mary", "Devon", "James"];
-
-// Using a loop, iterate through this array and console.log all of the people.
-// for (i = 0; i < people.length; i++) {
-//   console.log(people[i]);
-// }
-
-// // Write the command to remove “Greg” from the array.
-// people = people.splice(1, 3);
-// console.log(people);
-
-// // Write the command to remove “James” from the array.
-// people = people.splice(0, 2);
-// console.log(people);
-
-// // Write the command to add “Matt” to the front of the array.
-// people.unshift("Matt");
-// console.log(people);
-
-// people.push("Samuel");
-// console.log(people);
-
-// for (i = 0; i < people.length; i++) {
-//   if (people[i] != "Mary") {
-//     console.log(people[i]);
-//   } else {
-//     break;
-//   }
-// }
-
-// Write the command to make a copy of the array using slice. The copy should NOT include “Mary” or “Matt”.
-
-// console.log(people.indexOf('Mary'));
-// console.log(people.indexOf('Foo'));
-
-// people = ["Greg", "Mary", "Devon", "James"];
-// people.splice(2, 1, "Elizabeth", "Artie")
-// console.log(people);
-
-// let withBob=people.concat("Bob")
-// console.log(withBob);
-
-// let programming = {
-//     languages: ["JavaScript", "Python", "Ruby"],
-//     isChallenging: true,
-//     isRewarding: true,
-//     difficulty: 8,
-//     jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke"
-// };
-
-// programming.languages.push("Go")
-// console.log(programming.languages);
-
-// programming.difficulty=7
-// console.log(programming.difficulty);
-
-// delete programming.jokes
-// console.log(programming);
-
-// programming.isFun=true
-// console.log(programming);
-
-// for (i=0;programming.languages.length();i++)
-// console.log(programming.languages);
-
-// let obj = {
-//   firstname: "Samuel",
-//   lastname: "Cohen",
-//   occupation: "student",
-// };
-
-// console.log(obj.firstname);
-// console.log(obj.lastname);
-// console.log(obj.occupation);
-
-// console.log(obj["firstname"]);
-// console.log(obj["lastname"]);
-// console.log(obj["occupation"]);
 
 // obj.hobby="music"
 
@@ -303,42 +72,181 @@
 //     console.log(namesAndHobbies.key "doesn't exist");
 // }
 
-// let programming = {
-//   languages: ["JavaScript", "Python", "Ruby"],
-//   isChallenging: true,
-//   isRewarding: true,
-//   difficulty: 8,
-//   jokes:
-//     "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke",
+// Ex 4 JS functions
+
+// First function to calculate the cost of the Hotel
+
+// const oneNightCost = 140; //setting the price by night at 140$
+
+// function hotelCost() {
+//   let numberOfNights;
+//   do {
+//     numberOfNights = prompt("Enter a number of nights: "); //asking the user for a number of nights
+
+//     if (Number(numberOfNights) <= 0) {
+//       alert("You must enter a number more than 0.");
+//     } else if (isNaN(numberOfNights)) {
+//       alert("You must enter a number.");
+//     } else if (numberOfNights === null) {
+//       alert("Enter a correct number");
+//     } else {
+//       numberOfNights.trim() === "";
+//       alert("You entered an empty string");
+//     }
+//   } while (
+//     Number(numberOfNights) <= 0 ||
+//     isNaN(numberOfNights) ||
+//     numberOfNights === null ||
+//     numberOfNights.trim() === ""
+//   );
+
+//   let totalCost = oneNightCost * numberOfNights; // if the user typed a number, multiply one night cost by the number of night
+//   console.log(totalCost); // print the total cost
+//   return totalCost;
+// }
+
+// const totalCostHostel = hotelCost();
+
+// Second function to calculate the cost of the city
+
+// cities = {
+//   Paris: 220,
+//   London: 183,
+//   Other: 300,
 // };
 
-// programming.languages.push("Go");
-// console.log(programming.languages);
+// function planeRideCost() {
+//   let destination;
 
-// programming.difficulty = 7;
-// console.log(programming);
-
-// delete programming.jokes;
-// console.log(programming);
-
-// programming.isFun = true;
-// console.log(programming);
-
-// // for (let i in programming.languages) {
-// //     console.log(programming.languages[i]);
-// // }
-
-// for (let i = 0; i < programming.languages.length; i++) {
-//   console.log(programming.languages[i]);
+//   for (city in cities){
+//     if (city===destination)
+//  console.log(cities[city]);
+// }else{
+//   do {
+//     destination = prompt("Enter a city: "); //asking the user for a number of nights
+//     if (
+//       typeof destination === "string" ||
+//       destination === null ||
+//       destination.trim()
+//     ) {
+//       alert("You must enter a string");
+//     } else if ((city = "")) {
+//       alert("You must enter a city.");
+//     }
+//   } while (city === number || city === "");
+// }
+//   return price;
 // }
 
-// for (let key in programming) {
-//   console.log(key);
+// Third function to calculate the cost of the car rent
+
+// const oneDayRent = 40; //setting the price by night at 140$
+
+// function rentCost() {
+//   let numberDayRent;
+//   do {
+//     numberDayRent = prompt("Enter a number of nights: "); //asking the user for a number of nights
+
+//     if (Number(numberDayRent) <= 0) {
+//       alert("You must enter a number more than 0.");
+//     } else if (isNaN(numberDayRent)) {
+//       alert("You must enter a number.");
+//     } else if (numberDayRent === null) {
+//       alert("Enter a correct number");
+//     } else {
+//       numberOfNights.trim() === "";
+//       alert("You entered an empty string");
+//     }
+//   } while (
+//     Number(numberDayRent) <= 0 ||
+//     isNaN(numberDayRent) ||
+//     numberDayRent === null ||
+//     numberDayRent.trim() === ""
+//   );
+
+//   let totalCostRent = oneNightCost * numberDayRent; // if the user typed a number, multiply one night cost by the number of night
+//   console.log(totalCostRent); // print the total cost
+//   return totalCostRent;
 // }
 
-// for (let key in programming) {
-//     console.log([key]);
-//   }
+// const button = document.getElementById("enter") //selector du button enter
+// const input= document.getElementById("userinput")
+// const ul = document.querySelector("ul")
 
+// button.addEventListener("click", function () {
+//   if (input.value.length>0){
+//   const li = document.createElement("li");
+//   li.appendChild(document.createTextNode(input.value))
+//   ul.appendChild(li) // ajouter l'input à la liste
+//   input.value="" // une fois qu'on a ajouté l'input à la liste, on efface l'input
+// }
+// })
 
+// // on voudrait que l'ajout d'une entrée dans la liste fonctionne en faisant "entrée"
+// input.addEventListener("keypress", function (event) {
+//   console.log(event.which);
+//   if (input.value.length>0){
+//   const li = document.createElement("li");
+//   li.appendChild(document.createTextNode(input.value))
+//   ul.appendChild(li) // ajouter l'input à la liste
+//   input.value="" // une fois qu'on a ajouté l'input à la liste, on efface l'input
+// }
+// })
 
+// // function qui retourne la longueur de la chaine
+// function inputLength() {
+//     return input.value.length
+// }
+
+// // function qui ajoute élément dans la liste
+// function createListElement() {
+//     const li=document.createElement("li")
+//     li.appendChild(document.createTextNode(input.value));
+//     ul.appendChild(li)
+//     input.value=""
+// }
+
+// // function qui ajoute dans la liste après clic sur le bouton entrée
+// function addListAfterClick() {
+//     if (inputLength()>0){
+//         createListElement()
+//     }
+// }
+
+// // function qui ajoute dans la liste après qu'on tape sur entrée
+// function addListAfterKeypress(event) {
+//     if (inputLength()>0 && event.keyCode===13) {
+//         createListElement()
+//     }
+// }
+
+// button.addEventListener("click", addListAfterClick)
+// input.addEventListener("keypress", addListAfterKeypress)
+
+let allBoldItems;
+
+function getBoldItems() {
+  allBoldItems = document.querySelectorAll("strong");
+  // console.log(allBoldItems);
+  return allBoldItems;
+}
+
+function highlight() {
+  getBoldItems().forEach((item) => {
+    item.style.color = "blue";
+  });
+}
+
+function returnItemsToDefault() {
+  getBoldItems().forEach((item) => {
+    item.style.color = "black";
+  });
+}
+
+document.addEventListener("mouseover", () => {
+  highlight();
+});
+
+document.addEventListener("mouseout", () => {
+  returnItemsToDefault();
+});
