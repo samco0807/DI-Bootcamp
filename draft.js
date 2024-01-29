@@ -397,7 +397,7 @@
 //   newDiv.innerHTML = `The client wants a ${sizeDrink} juice, containing ${firstIngredient}, ${secondIngredient}, ${thirdIngredient}`;
 // }
 
-// Ex 1:
+// // Ex 1:
 // const colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 
 // for (i =0; i<colors.length; i++) {
@@ -410,7 +410,7 @@
 //   console.log(false);
 // }
 
-// Ex 2:
+// // Ex 2:
 
 // const colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 // const ordinal = ["th", "st", "nd", "rd"];
@@ -418,8 +418,8 @@
 // for (let i = 0, y = 0; i < colors.length && y < ordinal.length; i++, y++) {
 //   console.log(`${i + 1}${ordinal[y+1]} choice is ${colors[i]}`);
 // }
-
-// Ex 3:
+// // 
+// // Ex 3:
 
 // const users = [
 //   { firstName: "Bradley", lastName: "Bouley", role: "Full Stack Resident" },
@@ -467,7 +467,7 @@
 
 // console.log(newArray);
 
-// Ex 3:
+// // Ex 3:
 // const epic = ["a", "long", "time", "ago", "in a", "galaxy", "far far", "away"];
 
 // const sentence = epic.reduce((accumulator, currenValue) => {
@@ -478,7 +478,7 @@
 
 // console.log(sentence);
 
-// Ex 6:
+// // Ex 6:
 // const students = [
 //   { name: "Ray", course: "Computer Science", isPassed: true },
 //   { name: "Liam", course: "Computer Science", isPassed: false },
@@ -494,49 +494,3 @@
 
 // console.log(passedCourse);
 
-const gameInfo = [
-  {
-    username: "john",
-    team: "red",
-    score: 5,
-    items: ["ball", "book", "pen"]
-  },
-  {
-    username: "becky",
-    team: "blue",
-    score: 10,
-    items: ["tape", "backpack", "pen"]
-  },
-  {
-    username: "susy",
-    team: "red",
-    score: 55,
-    items: ["ball", "eraser", "pen"]
-  },
-  {
-    username: "tyson",
-    team: "green",
-    score: 1,
-    items: ["book", "pen"]
-  },
- ];
-
- let usernames=[]
- gameInfo.forEach((user)=>{
-usernames.push(user.username + "!")
-});
-
-console.log(usernames);
-
-// const usernames1=gameInfo.map(user => {
-//   return user.username + "!"
-// })
-// console.log(usernames1);
-
-const winners=[]
-gameInfo.forEach((user)=>{
-  if (user.score>5){
-    winners.push(user.username)}
-  });
-  
-  console.log(winners);
