@@ -494,54 +494,54 @@
 
 // console.log(passedCourse);
 
-const person = {
-  name: "John Doe",
-  age: 25,
-  location: {
-    country: "Canada",
-    city: "Vancouver",
-    coordinates: [49.2827, -123.1207],
-  },
-};
+// const person = {
+//   name: "John Doe",
+//   age: 25,
+//   location: {
+//     country: "Canada",
+//     city: "Vancouver",
+//     coordinates: [49.2827, -123.1207],
+//   },
+// };
 
-const {
-  name,
-  location: {
-    country,
-    city,
-    coordinates: [lat, lng],
-  },
-} = person;
+// const {
+//   name,
+//   location: {
+//     country,
+//     city,
+//     coordinates: [lat, lng],
+//   },
+// } = person;
 
 // console.log(`I am ${name} from ${city}, ${country}. Latitude(${lat}), Longitude(${lng})`);
 
 // Ex 2:
 
-function displayStudentInfo(objUser) {
-  const { first, last } = objUser;
-  // console.log(`Your full name is ${first} ${last} `);
-}
+// function displayStudentInfo(objUser) {
+//   const { first, last } = objUser;
+//   // console.log(`Your full name is ${first} ${last} `);
+// }
 
-displayStudentInfo({ first: "Elie", last: "Schoppik" });
+// displayStudentInfo({ first: "Elie", last: "Schoppik" });
 
-// Ex 3:
-let users = { user1: 18273, user2: 92833, user3: 90315 };
+// // Ex 3:
+// let users = { user1: 18273, user2: 92833, user3: 90315 };
 
-// let myArray=console.log(Object.entries(users));
+// // let myArray=console.log(Object.entries(users));
 
-// console.log(doubledNumbers);
+// // console.log(doubledNumbers);
 
-// Ex 4:
-class Person {
-  constructor(name) {
-    this.name = name;
-  }
-}
+// // Ex 4:
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
+// }
 
-const member = new Person("John");
-// console.log(typeof member);
+// const member = new Person("John");
+// // console.log(typeof member);
 
-Object;
+// Object;
 
 // class Dog {
 //   constructor(name) {
@@ -581,71 +581,70 @@ Object;
 
 // DAILY CHALLENGE
 
-class Video{
-  constructor(title, uploader, time){
-    this.title=title
-    this.uploader=uploader
-    this.time=time
-  }
+// class Video{
+//   constructor(title, uploader, time){
+//     this.title=title
+//     this.uploader=uploader
+//     this.time=time
+//   }
 
-  // Create a method called watch() which displays a string as follows:
-  watch(){
-    return `${this.uploader} watched all ${this.time} of ${this.title}!`
-  }
-}
+//   // Create a method called watch() which displays a string as follows:
+//   watch(){
+//     return `${this.uploader} watched all ${this.time} of ${this.title}!`
+//   }
+// }
 
-// Instantiate a new Video instance and call the watch() method.
-const newVideo=new Video("Titanic", "WeTransfer", 195)
-// console.log(newVideo.watch()); 
-const anotherVideo=new Video("Avatar", "DriveUpload", 200)
-// console.log(anotherVideo.watch());
+// // Instantiate a new Video instance and call the watch() method.
+// const newVideo=new Video("Titanic", "WeTransfer", 195)
+// // console.log(newVideo.watch()); 
+// const anotherVideo=new Video("Avatar", "DriveUpload", 200)
+// // console.log(anotherVideo.watch());
 
-// Use an array to store data for five Video instances (ie. title, uploader, time)
-let Videos=[{}];
-// Videos.map(()=>{newVideo.this.uploader, this.time, this.title})
-Videos.push(Video.watch(this.uploader, this.time, this.title))
-console.log(Videos);
+// // Use an array to store data for five Video instances (ie. title, uploader, time)
+// let Videos=[{}];
+// // Videos.map(()=>{newVideo.this.uploader, this.time, this.title})
+// Videos.push(Video.watch(this.uploader, this.time, this.title))
+// console.log(Videos);
 
-// Loop through the array to instantiate those instances.
-for (let video in Videos)
-console.log(video);
+// // Loop through the array to instantiate those instances.
+// for (let video in Videos)
+// console.log(video);
 
 
 
 // Exercises JSON:
 
-// const marioGame = {
-//   detail : "An amazing game!",
-//   characters : {
-//       mario : {
-//         description:"Small and jumpy. Likes princesses.",
-//         height: 10,
-//         weight: 3,
-//         speed: 12,
-//       },
-//       bowser : {
-//         description: "Big and green, Hates princesses.",
-//         height: 16,
-//         weight: 6,
-//         speed: 4,
-//       },
-//       princessPeach : {
-//         description: "Beautiful princess.",
-//         height: 12,
-//         weight: 2,
-//         speed: 2,
-//       }
-//   },
-// }
+const marioGame = {
+  detail : "An amazing game!",
+  characters : {
+      mario : {
+        description:"Small and jumpy. Likes princesses.",
+        height: 10,
+        weight: 3,
+        speed: 12,
+      },
+      bowser : {
+        description: "Big and green, Hates princesses.",
+        height: 16,
+        weight: 6,
+        speed: 4,
+      },
+      princessPeach : {
+        description: "Beautiful princess.",
+        height: 12,
+        weight: 2,
+        speed: 2,
+      }
+  },
+}
 
-// // const jsonObject = JSON.stringify(marioGame). The nested object is converted automatically
+const jsonObject = JSON.stringify(marioGame). 
+// The nested object is converted automatically
 
-// // JSON.parse(jsonObject)
-// let jsonObject = JSON.stringify(marioGame)
+JSON.parse(marioGame)
+jsonObject = JSON.stringify(marioGame,null, 2 )
 
-// // console.log(jsonObject, null, 2);
-
-// // DAILY CHALLENGE :
+// DAILY CHALLENGE :
 // const object= document.querySelectorAll("form")
 
 // object.addEventListener("click", ()=>{

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Ex 1: -->
+
+    <form action="http://127.0.0.1:5500/draft.html" method="get">
+      <label for="name">Name</label><br />
+      <input type="text" name="filename" value="John" /><br />
+      <label for="comments">Comments</label><br />
+      <textarea name="Comments" id="" cols="30" rows="10">
+    Hello this is a comment</textarea
+      ><br />
+      <button type="submit">Send</button>
+    </form>
+
+    <!-- Where will the sent data appear? in the URL -->
+
+    <!-- Ex 2: -->
+    <form action="http://127.0.0.1:5500/draft.html" method="post">
+      <label for="name">Name</label><br />
+      <input type="text" name="example" value="John" /><br />
+      <label for="comments">Comments</label><br />
+      <textarea name="Comments" id="" cols="30" rows="10">
+            Hello this is a comment</textarea
+      ><br />
+      <button type="submit">Send</button>
+    </form>
+    <script src="ExercisesXP.js"></script>
+  </body>
+</html>
