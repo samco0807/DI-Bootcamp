@@ -1,6 +1,12 @@
 // const a = "Salut"
 // const b = "les gens"
 
+// const { error } = require("console");
+// const { reject } = require("lodash");
+
+// const { reject } = require("lodash");
+// const { resolve } = require("path");
+
 // const person = {
 //     firstname: 'John',
 //     lastname:'Doe' ,
@@ -614,35 +620,35 @@
 
 // Exercises JSON:
 
-const marioGame = {
-  detail : "An amazing game!",
-  characters : {
-      mario : {
-        description:"Small and jumpy. Likes princesses.",
-        height: 10,
-        weight: 3,
-        speed: 12,
-      },
-      bowser : {
-        description: "Big and green, Hates princesses.",
-        height: 16,
-        weight: 6,
-        speed: 4,
-      },
-      princessPeach : {
-        description: "Beautiful princess.",
-        height: 12,
-        weight: 2,
-        speed: 2,
-      }
-  },
-}
+// const marioGame = {
+//   detail : "An amazing game!",
+//   characters : {
+//       mario : {
+//         description:"Small and jumpy. Likes princesses.",
+//         height: 10,
+//         weight: 3,
+//         speed: 12,
+//       },
+//       bowser : {
+//         description: "Big and green, Hates princesses.",
+//         height: 16,
+//         weight: 6,
+//         speed: 4,
+//       },
+//       princessPeach : {
+//         description: "Beautiful princess.",
+//         height: 12,
+//         weight: 2,
+//         speed: 2,
+//       }
+//   },
+// }
 
-const jsonObject = JSON.stringify(marioGame). 
-// The nested object is converted automatically
+// const jsonObject = JSON.stringify(marioGame). 
+// // The nested object is converted automatically
 
-JSON.parse(marioGame)
-jsonObject = JSON.stringify(marioGame,null, 2 )
+// JSON.parse(marioGame)
+// jsonObject = JSON.stringify(marioGame,null, 2 )
 
 // DAILY CHALLENGE :
 // const object= document.querySelectorAll("form")
@@ -650,3 +656,285 @@ jsonObject = JSON.stringify(marioGame,null, 2 )
 // object.addEventListener("click", ()=>{
 //   JSON.stringify()
 // })
+
+// // Ex 1:
+// let number=console.log("Enter a number: "); 
+// let compareToTen = new Promise ((resolve, rejected)=>{
+//   if(number<=10){
+//     resolve('Yeees');
+//   } else{
+//     rejected('Fail')
+//   }
+// })
+// .catch(error=>console.log(error))
+
+// // Ex 2:
+// const promise = new Promise ((resolve, reject) => {
+//   setTimeout(()=>{
+//     resolve();
+//   }, 2000);
+//   reject()
+// });
+
+// promise.then((res)=> {
+//     console.log("success");
+//   })
+  
+// EX 2:
+
+// Create a promise that resolves itself in 4 seconds and returns a “success” string.
+
+// const ex2=new Promise((resolve, reject)=>{
+//         setTimeout(() => {
+//             resolve("Success");
+//         }, 4000)
+//     });
+
+// const executePromise = async () => {
+//     try {
+//         let success=await ex2
+//         console.log(success);        
+//     } catch (error) {
+//      console.log(error);   
+//     }
+// }
+
+// executePromise()
+
+// // Ex 3:
+// const promiseResolve(number)=new Promise ((resolve, reject) => {
+// resolve(3);
+// reject("error")
+// })
+
+// Promise.reject(error)=new Promise ((resolve, reject) => {
+//   reject("Boo!")})
+
+// // DAILY CHALLENGE:
+
+// 1ST DAILY CHALLENGE
+
+// const makeAllCaps = (wordsArray)=>{
+// new Promise((resolve, reject) => {
+//   if(Array.isArray(wordsArray) && word in wordsArray==="string"){
+//     resolve(wordsArray.toUppercase)
+//   } else{
+//     reject("this is not an array of words")
+//   }
+// })
+// }
+
+// const sortWords = () => {
+// new Promise((resolve, reject) => {
+//   if (sortWords>=4){
+//   resolve(word.sort())
+// console.log(word);
+// }else{reject
+// }
+// })
+// }
+
+// 2ND DAILY CHALLENGE
+// const toJs = () => {
+//     new Promise(resolve, reject)
+//     let morseObj
+//     if (toJs=""){
+//       resolve(JSON.parse(morseObj))
+//       console.log(morseObj);
+//   } else {
+//       reject("error")
+// }
+// }
+
+// const toMorse = (morseObj) => {
+//   const userSentence = prompt("enter a word: ")
+//   new Promise(resolve, reject)
+    
+//     if(userSentence=!morseObj)
+// } resolve(toMorse=>toMorse.map(()=>))
+// reject ("Error")
+
+// joinWords = () => {}
+
+// Exercices FETCH & ASYNC
+
+// EX 1:
+// console.log("Starting ...")
+
+// const fetchExercice = () => {
+//     console.log("Testing ...")
+//     fetch("https://api.giphy.com/v1/gifs/search?q=hilarious&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My")
+//         .then((resp) => {
+//             if(resp.ok){
+//                 return resp.json()
+//             } else {
+//                 throw new Error("Wrong GIPHY")
+//             }
+//         })
+//         .then((obj) => {
+//             // console.log(obj) 
+//         })
+//         .catch(function (error) {
+//             console.log(`We got the error ${error}`)
+//         });
+//     console.log("Work Done ...")
+// }
+
+// fetchExercice()
+
+// Ex 3:
+
+// const exercice3test1 = async () => {
+//     let answer = await response.json()
+//     let result = await console.log(objectStarWars.result)
+// }
+
+// const exercice3=async()=>{
+//     try{
+//         let response=await fetch('https://www.swapi.tech/api/starships/9/')
+//         let data=await response.json
+//         let result=data.result
+//         console.log(result);
+//     }
+//     catch (error){
+//         console.log(error);
+//     }
+// }
+
+// function resolveAfter2Seconds() {
+//     return new Promise(resolve => {
+//         setTimeout(() => {
+//             resolve('resolved');
+//         }, 2000);
+//     });
+// }
+
+// async function asyncCall() {
+//     console.log('calling');
+//     let result = await resolveAfter2Seconds();
+//     console.log(result);
+// }
+
+// asyncCall();
+
+// 1/ "Calling"
+// 2/ After 2 seconds : "resolved"
+
+// DAILY CHALLENGE 1: FINISHED
+
+// récupérer les éléments HTML
+
+// const gitForm=document.getElementById('gitForm')
+// const searchInput=document.getElementById('searchInput')
+// const gifContainer=document.getElementById('gifContainer')
+
+// // Fonction pour récupérer un gif aléatoire
+// const fetchRandomGif = async(searchTerm) => {
+  
+//   try {
+//         // Requête à l'API Giphy pour récupérer un gif aléatoire en fonction de la catégorie de recherche
+//     const response=await fetch(`https://api.giphy.com/v1/gifs/random?api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My&tag=${searchTerm}`)
+//     const data=await response.json()
+//     const gifUrl=data.data.image_original_url
+
+//     // Créer un élément img pour afficher le gif
+//     const gifElement=document.createElement("img")
+//     gifElement.src=gifUrl
+//     gifElement.classList.add("gif")
+
+//     // Ajouter un bouton delete à côté du GIF
+//     const gifDeleteButton=document.createElement("button")
+//     gifDeleteButton.textContent = "Delete";
+//     gifDeleteButton.classList.add("gifdelete")
+
+//     // Ajouter un bouton delete all à côté du GIF
+//     const gifDeleteAllButton=document.createElement("button")
+//     gifDeleteAllButton.textContent = "Delete All";
+//     gifDeleteAllButton.classList.add("gifdeleteall")
+
+//     // Ajouter un event supprimer le gif au bouton delete
+//     gifDeleteButton.addEventListener("click", () =>{
+//       gifContainer.removeChild(gifElement)
+//       gifContainer.removeChild(gifDeleteButton)
+//     })
+
+//     // Supprimer tout quand on clique sur le bouton delete all
+//     gifDeleteAllButton.addEventListener("click", () =>{
+//       gifContainer.innerHTML=''
+//     })
+
+//     // Ajouter le gif et le bouton supprimer et supprimer tout au conteneur
+//     gifContainer.appendChild(gifDeleteButton)
+//     gifContainer.appendChild(gifDeleteAllButton)
+//     gifContainer.appendChild(gifElement)
+
+//   } catch (error) {
+//   console.error('Error fetching gif: ', error);  
+//   }
+// }
+// gifContainer.innerHTML=''
+
+// gitForm.addEventListener("submit", (e)=> {
+//   e.preventDefault();
+
+//     // Récupérer la valeur de la recherche de l'utilisateur
+//   const searchTerm=searchInput.value;
+
+//   gifContainer.innerHTML=''
+//   // Supprimer les GIF précédents et les boutons "Supprimer"
+//   fetchRandomGif(searchTerm)
+// })
+
+// DAILY CHALLENGE 2
+
+const data=document.getElementById('data')
+const parisLat=document.getElementById('ParisLat')
+const parisLong=document.getElementById('ParisLong')
+const nyLat=document.getElementById('nyLat')
+const nyLong=document.getElementById('nyLong')
+const hours=document.getElementById('hours')
+
+    // Requête à l'API Sunrise pour récupérer l'horaire en fonction de la ville
+
+    const parisHour = (parisLat, parisLong) = new Promise ((resolve)=>{
+    resolve(
+    const response=await fetch(`https://api.sunrise-sunset.org/json?${parisLat}&${parisLong}`)
+    const data=await response.json()
+    const hourUrl=data.data.hour_original_url
+    )
+  })
+  
+  const fetchHours = async(cityLat, cityLong) => {
+    try {
+    
+    
+    // Ajouter un output
+    const citySunrise=document.createElement("h2")
+    citySunrise.innerText=hourUrl
+
+    // Ajouter un bouton delete à côté de l'heure
+    const hourDeleteButton=document.createElement("button")
+    hourDeleteButton.textContent = "Delete";
+    hourDeleteButton.classList.add("hourdelete")
+
+    // Ajouter l'output et le bouton delelte à la div
+    hours.appendChild(citySunrise)
+    hours.appendChild(hourDeleteButton)
+
+  } catch (error) {
+      console.error('Error fetching lat and long: ', error);  
+  }
+
+  data.addEventListener("submit", (e)=> {
+      e.preventDefault();
+        
+      // Récupérer la valeur de la recherche de l'utilisateur
+      const parisLatInput=parisLat.value 
+      const parisLongInout=parisLong.value;
+    
+      // Supprimer les GIF précédents et le bouton "Supprimer"
+      hours.innerHTML=''
+      
+      fetchHours(cityLat, cityLong)
+    }) 
+}
